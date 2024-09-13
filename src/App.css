@@ -1,0 +1,483 @@
+*{
+  margin: 0;
+  
+  box-sizing: border-box;
+  font-family: hoves;
+  transition: 0.2s;
+}
+
+h1,h2,h3,h4,h5,h6, nav{
+  font-family: seasons; 
+}
+
+h1{
+  font-size: min(100px, 7vw);
+}
+
+@font-face {
+  font-family: seasons;
+  src: url(../public/fonts/The_seasons/Fontspring-DEMO-theseasons-reg.otf);
+}
+@font-face {
+  font-family: hoves ;
+  src: url(../public/fonts/TT\ Hoves\ Pro\ Trial\ Regular.ttf);
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+body::-webkit-scrollbar{
+  height: 0;
+  background-color: white;
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: black;
+}
+
+
+
+main{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+nav{
+  /*border: 1px solid red;*/
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 0 3vw;
+  height: 65px;
+  background-color: black;
+  position: fixed;
+  z-index: 2;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+nav ul{
+  display: flex;
+  /*border: 1px solid blue;*/
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  max-width: 300px;
+  min-width: 268px;
+  height: 100%;
+}
+
+nav ul li{
+  list-style: none;
+  height: 50%;
+  padding: 3px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.home{
+  /*border: 1px solid red;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 3vw;
+  height: 100vh;
+  min-height: 620px;
+}
+
+.homefirst a:hover{
+  color: black;
+}
+
+.homefirst{
+  width: 50%;
+  /*border: 1px solid red;*/
+}
+
+
+
+
+
+.home h1{
+  
+  /*border: 1px solid red;*/
+  width: 100%;
+}
+
+.homebutton{
+  border: 1px solid white;
+  width: fit-content;
+  padding: 10px 3%;
+  border-radius: 30px;
+  font-size: min(30px, 2.2vw);
+}
+
+.homebutton:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.arrow{
+  color: white;
+}
+
+.homesecond{
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.homesecond img{
+  width: 100%;
+}
+
+.homesecond p{
+  font-size: min(2.3vw, 30px);
+  cursor: pointer;
+}
+
+.homesecond p:hover{
+  scale: 1.05;
+}
+
+.homesecond img:hover{
+  scale: 1.05;
+  cursor: pointer;
+}
+
+
+/*About*/
+.about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 3vw;
+  height: 100vh;
+  min-height: 620px;
+  /*border: 1px solid red;*/
+}
+
+.about a{
+  width: 40%;
+}
+
+.about img{
+  cursor: pointer;
+  /*border: 1px solid red;*/
+  width: 100%;
+}
+
+.about img:hover{
+  scale: 1.05;
+
+}
+
+/*.about h1{
+  font-size: min(100px, 7vw);
+}*/
+
+.aboutfirst{
+  width: 50%;
+  /*border: 1px solid green;*/
+}
+
+.aboutfirst p{
+  font-size: min(2.3vw, 30px);
+  max-width: 480px;
+}
+
+.aboutfirst hr{
+  width: 50%;
+}
+
+/*background*/
+
+.background{
+  display: flex;
+  height: 100vh;
+  min-height: 620px;
+  padding: 20px 3vw;
+  position: relative;
+}
+
+.background h1{
+  /*font-size: min(100px, 7vw);*/
+  /*border: 1px solid red;*/
+  height: fit-content;
+  width: 100%;
+}
+
+.backList {
+  /*border: 1px solid red;*/
+  width: fit-content;
+ height: fit-content;
+ display: flex;
+ flex-direction: column;
+ position: relative;
+ position: absolute;
+ right: 5%;
+ top: 25%;
+ line-height: 40px;
+}
+
+.backList li{
+  color: grey;
+}
+
+
+.designs{
+  padding: 10px;
+  height: 100vh;
+  min-height: 620px;
+}
+
+.background p, .background li, .contact p{
+  font-size: min(2.3vw, 30px);
+}
+
+.projects{
+  /*border: 1px solid red;*/
+  min-height: 500px;
+  padding: 10px;
+}
+
+.project{
+  width: 80%;
+  /*border: 1px solid red;*/
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.project:hover{
+  scale: 1.05;
+}
+
+.project .des{
+  /*border: 1px solid green;**/
+  height: 40%;
+}
+
+.project img{
+  height: 50%;
+}
+
+/*contact*/
+
+.contact{
+  height: 100vh;
+  min-height: 620px;
+  margin-top: 10vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+
+.contact .des{
+  /*border: 1px solid red;*/
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.contact .des a{
+  width: 30%;
+  /*border: 1px solid red;*/
+}
+
+.contact .des div{
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+
+.contact .des div:hover{
+  scale: 1.05;
+}
+
+.icon{
+  width: 100px;
+  height: 100px;
+}
+
+
+#checkbox, label, .mobilemenu{
+  display: none;
+}
+
+#checkbox:checked ~ .mobilemenu{
+  right: 0;
+}
+
+
+
+
+
+
+/*res*/
+@media(max-width:750px){
+  nav ul{
+    display: none;
+  }
+  label{
+    display: block;
+  }
+  .mobilemenu{
+    display: flex;
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    right: -100px;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    height: 150px ;
+    justify-content: space-between;
+  
+  }
+
+  .mobilemenu li{
+    color: black;
+    list-style: none;
+  }
+/*home*/
+.home{
+  margin-top: min(15vh, 70px);
+  /*border: 1px solid red;*/
+  flex-direction: column;
+}
+
+
+.homefirst{
+  width: 100%;
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 50%;
+}
+
+.home h1{
+  margin-bottom: 10px;
+  /*border: 1px solid red;*/
+  width: 100%;
+}
+
+.homesecond{
+  /*border: 1px solid red;*/
+  width: 100%;
+}
+
+/*About*/
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*border: 1px solid red;*/
+  margin-top: min(30vh, 150px);
+}
+
+.about a{
+  width: 80%;
+  /*border: 1px solid red;*/
+  height: 50%;
+}
+
+
+/*.about h1{
+  font-size: min(100px, 7vw);
+}*/
+
+.aboutfirst{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50%;
+  line-height: 30px;
+  /*border: 1px solid green;*/
+}
+
+.aboutfirst h1{
+  margin-bottom: 10px;
+}
+
+
+/*contact*/
+
+.contact{
+  height: 100vh;
+  min-height: 620px;
+  margin-top: 10vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+
+.contact .des{
+  /*border: 1px solid red;*/
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.contact .des a{
+  width: 100%;
+  height: 30%;
+  /*border: 1px solid red;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+}

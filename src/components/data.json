@@ -1,0 +1,20 @@
+[
+    {"name":"Agricorp",
+    "des":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore earum, vel porro corrupti voluptas pariatur doloribus laboriosam, autem sed, alias nam non aliquam accusantium quaerat adipisci. Tenetur ab officiis adipisci.",
+    "img":"/images/agricorp.jpg"},
+    {"name":"Car Rental",
+    "des":"",
+    "img":"/images/car_rental.jpg"},
+    {"name":"Fines",
+    "des":"",
+    "img":"/images/fines.jpg"},
+    {"name":"School Circle",
+    "des":"",
+    "img":"/images/schoolthing.jpg"},
+    {"name":"Web Cv",
+    "des":"",
+    "img":"/images/web_cv.jpg"},
+    {"name":"Woodpecker",
+    "des":"",
+    "img":"/images/woodpecker.jpg"}   
+]
