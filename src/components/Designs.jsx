@@ -31,10 +31,12 @@ function Designs({closeMenu}) {
         </>
       }
 
+     
+
   return <>
     <div className="designs" id='designs' onClick={closeMenu}>
         <h1>My Designs</h1>
-        <Carousel className="projects" responsive={responsive} removeArrowOnDeviceType={["tablet", "mobile"]}>
+        <Carousel className="projects" responsive={responsive}   showDots={true} customDot={<CustomDots />} removeArrowOnDeviceType={["tablet", "mobile"]}>
           {PROJECTS.map(project=>{
             return <div className="project">
                 <img src={project.img} alt="Project Image" />
