@@ -47,17 +47,35 @@ function App() {
    <RxHamburgerMenu className='menuIcon' onClick={()=>{setShowMenu(!showMenu)}}  />
    </label>
     </nav>
-    <input type='checkbox' id='checkbox' checked={showMenu}/>
-  <div className='mobilemenu'>
-  <IoMdClose className='menuIcon'  onClick={()=>{setShowMenu(!showMenu)}} />
-    <ul>
-        <a href='#home'  onClick={()=>{setShowMenu(!showMenu)}}><li>Home</li></a>
-        <a href='#about'  onClick={()=>{setShowMenu(!showMenu)}}><li>About</li></a>
-        <a href='#designs'  onClick={()=>{setShowMenu(!showMenu)}}><li>Designs</li></a>
-        <a href='#contact'  onClick={()=>{setShowMenu(!showMenu)}}><li>Contact</li></a>
-      </ul>
-      <div></div>
-      </div>
+   {/*<input type='checkbox' id='checkbox' checked={showMenu}/>*/}
+<AnimatePresence>
+{showMenu &&
+   <motion.div
+   initial={{
+     right:"-100vw"
+   }}
+   animate={{
+     right:"0"
+   }}
+   transition={{
+     duration:0.6,
+     ease:"backInOut"
+   }}
+   exit={{
+    right:"-100vw"
+   }}
+   className='mobilemenu'>
+   <IoMdClose className='menuIcon'  onClick={()=>{setShowMenu(!showMenu)}} />
+     <ul>
+         <a href='#home'  onClick={()=>{setShowMenu(!showMenu)}}><li>Home</li></a>
+         <a href='#about'  onClick={()=>{setShowMenu(!showMenu)}}><li>About</li></a>
+         <a href='#designs'  onClick={()=>{setShowMenu(!showMenu)}}><li>Designs</li></a>
+         <a href='#contact'  onClick={()=>{setShowMenu(!showMenu)}}><li>Contact</li></a>
+       </ul>
+       <div></div>
+       </motion.div>
+ }
+</AnimatePresence>
     <main>
       <Home closeMenu={closeMenu} />
       <About closeMenu={closeMenu} />
