@@ -12,14 +12,23 @@ function Home({closeMenu}) {
           left:"0"
       }}
       transition={{
-          duration:0.3,
+          duration:0.6,
           ease:"backInOut"
       }}
         className="homefirst">
         <h1>WELCOME TO MY DESIGN PORTFOLIO</h1>
-        <div className="homebutton">
-            <a href="#about">Morenike Oyedeji;UI Designer</a>
-        </div>
+        <motion.div className="homebutton"
+        whileHover={{
+          scale:1.01
+        }}
+          transition={{
+              duration:0.2,
+              ease:"easeInOut"
+            }}
+        >
+            <motion.a 
+            href="#about">Morenike Oyedeji;UI Designer</motion.a>
+        </motion.div>
         </motion.div>
         <motion.div
           initial={{
@@ -29,14 +38,30 @@ function Home({closeMenu}) {
             right:"0"
           }}
           transition={{
-            duration:0.3,
+            duration:0.6,
             ease:"backInOut"
           }}
         className="homesecond">
         <a href="#designs">
-        <img src='/images/newprof.png' />
+        <motion.img 
+        whileHover={{
+          scale:1.05
+        }}
+        transition={{
+          duration:0.1,
+          ease:"easeInOut"
+        }}
+        src='/images/newprof.png' />
         </a>
-       <a href="#contact"><p> <BsArrowReturnRight className='arrow' /> Work with me today</p></a>
+       <motion.a 
+       whileHover={{
+        scale:1.02
+      }}
+      transition={{
+        duration:0.1,
+        ease:"easeInOut"
+      }}
+       href="#contact"><p> <BsArrowReturnRight className='arrow' /> Work with me today</p></motion.a>
         </motion.div>
     </div>
   </>

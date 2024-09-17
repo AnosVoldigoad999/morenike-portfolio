@@ -3,7 +3,7 @@
   
   box-sizing: border-box;
   font-family: hoves;
-  transition: 0.2s;
+
 }
 
 h1,h2,h3,h4,h5,h6, nav{
@@ -102,12 +102,12 @@ nav ul li{
   align-items: center;
 }
 
-nav ul li:hover{
+/*nav ul li:hover{
   background-color: white;
   color: black;
   cursor: pointer;
 }
-
+*/
 .home{
   /*border: 1px solid red;*/
   display: flex;
@@ -118,9 +118,9 @@ nav ul li:hover{
   min-height: 620px;
 }
 
-.homefirst a:hover{
+/*.homefirst a:hover{
   color: black;
-}
+}*/
 
 .homefirst{
   width: 50%;
@@ -147,9 +147,7 @@ nav ul li:hover{
 }
 
 .homebutton:hover{
-  background-color: white;
   color: black;
-  cursor: pointer;
 }
 
 .arrow{
@@ -174,14 +172,14 @@ nav ul li:hover{
   cursor: pointer;
 }
 
-.homesecond p:hover{
+/*.homesecond p:hover{
   scale: 1.05;
-}
+}*/
 
-.homesecond img:hover{
+/*.homesecond img:hover{
   scale: 1.05;
   cursor: pointer;
-}
+}*/
 
 
 /*About*/
@@ -206,10 +204,10 @@ nav ul li:hover{
   width: 100%;
 }
 
-.about img:hover{
+/*.about img:hover{
   scale: 1.05;
 
-}
+}*/
 
 /*.about h1{
   font-size: min(100px, 7vw);
@@ -295,9 +293,9 @@ nav ul li:hover{
   margin: 0 auto;
 }
 
-.project:hover{
+/*.project:hover{
   scale: 1.05;
-}
+}*/
 
 .project .des{
   /*border: 1px solid green;**/
@@ -350,9 +348,9 @@ nav ul li:hover{
 
 
 
-.contact .des div:hover{
+/*.contact .des div:hover{
   scale: 1.05;
-}
+}*/
 
 .icon{
   width: 100px;

@@ -11,7 +11,15 @@ function About({closeMenu}) {
         <p>I'm an entry level UI/UX designer with about two years of experience. I design user friendly and easy to use interfaces for both web and mobile applications and devices. I've designed over twenty mobile and website applications with amazing mockups and I'm looking to do more.</p>
        <hr />
         </div>
-      <a  href="#designs"><img src="/images/whoismorenike.png" alt="who is morenike" /></a>
+      <motion.a
+      whileHover={{
+        scale:1.05
+      }}
+      transition={{
+        duration:0.1,
+        ease:"easeInOut"
+      }}
+      href="#designs"><img src="/images/whoismorenike.png" alt="who is morenike" /></motion.a>
     </div>
   </>
 }

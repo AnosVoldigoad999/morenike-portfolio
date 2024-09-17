@@ -2,6 +2,7 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css'
 import PROJECTS from './data.json'
+import { motion } from 'framer-motion';
 function Designs({closeMenu}) {
 
     const responsive = {
@@ -39,13 +40,21 @@ function Designs({closeMenu}) {
         <Carousel className="projects" responsive={responsive}   showDots={true} customDot={<CustomDots />} removeArrowOnDeviceType={["tablet", "mobile"]}>
           {PROJECTS.map(project=>{
             return <a href={project.link} target='_blank'>
-              <div className="project">
+              <motion.div 
+              whileHover={{
+                scale:1.05
+              }}
+                transition={{
+                    duration:0.1,
+                    ease:"easeInOut"
+                  }}
+              className="project">
                 <img src={project.img} alt="Project Image" />
              <div className="des">
              <h3>{project.name}</h3>
                 <p>{project.des}</p>
              </div>
-            </div>
+            </motion.div>
             </a>
           })}
         </Carousel>

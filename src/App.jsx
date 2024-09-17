@@ -21,10 +21,27 @@ function App() {
     }} >
       <h2>Morenike</h2>
       <ul>
-        <a href='#home'><li>Home</li></a>
-        <a href='#about'><li>About</li></a>
-        <a href='#designs'><li>Designs</li></a>
-        <a href='#contact'><li>Contact</li></a>
+        <a href='#home'><motion.li
+        whileHover={{
+          backgroundColor:"white",
+          color:"black"
+        }}
+        >Home</motion.li></a>
+        <a href='#about'><motion.li
+            whileHover={{
+              backgroundColor:"white",
+              color:"black"
+            }}>About</motion.li></a>
+        <a href='#designs'><motion.li
+            whileHover={{
+              backgroundColor:"white",
+              color:"black"
+            }}>Designs</motion.li></a>
+        <a href='#contact'><motion.li
+            whileHover={{
+              backgroundColor:"white",
+              color:"black"
+            }}>Contact</motion.li></a>
       </ul>
    <label htmlFor='checkbox'>
    <RxHamburgerMenu className='menuIcon' onClick={()=>{setShowMenu(!showMenu)}}  />
