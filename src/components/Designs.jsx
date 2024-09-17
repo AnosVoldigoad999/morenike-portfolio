@@ -38,13 +38,15 @@ function Designs({closeMenu}) {
         <h1>My Designs</h1>
         <Carousel className="projects" responsive={responsive}   showDots={true} customDot={<CustomDots />} removeArrowOnDeviceType={["tablet", "mobile"]}>
           {PROJECTS.map(project=>{
-            return <div className="project">
+            return <a href={project.link} target='_blank'>
+              <div className="project">
                 <img src={project.img} alt="Project Image" />
              <div className="des">
              <h3>{project.name}</h3>
                 <p>{project.des}</p>
              </div>
             </div>
+            </a>
           })}
         </Carousel>
     </div>

@@ -18,7 +18,7 @@ function Contact({closeMenu}){
         <div className="email">
             <MdOutlineEmail className="icon" />
             <p>Email</p>
-            <p style={{color:"grey", fontSize:"min(20px, 1.5vw)"}}>oyedejimorenike@gmail.com</p>
+            <p style={{color:"grey"}}>oyedejimorenike@gmail.com</p>
         </div>
         </a>
         <a href="tel:+2348145391738" target="_blank">

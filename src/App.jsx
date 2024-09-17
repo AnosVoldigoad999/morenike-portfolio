@@ -6,6 +6,7 @@ import Background from './components/Background'
 import Designs from './components/Designs'
 import Contact from './components/Contact'
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoMdClose } from "react-icons/io";
 import { AnimatePresence, motion } from 'framer-motion'
 function App() {
   const [showMenu, setShowMenu] = useState(false)
@@ -30,12 +31,16 @@ function App() {
    </label>
     </nav>
     <input type='checkbox' id='checkbox' checked={showMenu}/>
-  <ul className='mobilemenu'>
-        <a href='#home'><li>Home</li></a>
-        <a href='#about'><li>About</li></a>
-        <a href='#designs'><li>Designs</li></a>
-        <a href='#contact'><li>Contact</li></a>
+  <div className='mobilemenu'>
+  <IoMdClose className='menuIcon'  onClick={()=>{setShowMenu(!showMenu)}} />
+    <ul>
+        <a href='#home'  onClick={()=>{setShowMenu(!showMenu)}}><li>Home</li></a>
+        <a href='#about'  onClick={()=>{setShowMenu(!showMenu)}}><li>About</li></a>
+        <a href='#designs'  onClick={()=>{setShowMenu(!showMenu)}}><li>Designs</li></a>
+        <a href='#contact'  onClick={()=>{setShowMenu(!showMenu)}}><li>Contact</li></a>
       </ul>
+      <div></div>
+      </div>
     <main>
       <Home closeMenu={closeMenu} />
       <About closeMenu={closeMenu} />

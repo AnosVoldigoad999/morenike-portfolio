@@ -124,6 +124,7 @@ nav ul li:hover{
 
 .homefirst{
   width: 50%;
+  position: relative;
   /*border: 1px solid red;*/
 }
 
@@ -161,6 +162,7 @@ nav ul li:hover{
   flex-direction: column;
   align-items: center;
   width: 30%;
+  position: relative;
 }
 
 .homesecond img{
@@ -195,6 +197,7 @@ nav ul li:hover{
 
 .about a{
   width: 40%;
+  position: relative;
 }
 
 .about img{
@@ -214,6 +217,7 @@ nav ul li:hover{
 
 .aboutfirst{
   width: 50%;
+  position: relative;
   /*border: 1px solid green;*/
 }
 
@@ -302,6 +306,8 @@ nav ul li:hover{
 
 .project img{
   height: 50%;
+  object-fit: contain;
+  background-color: white;
 }
 
 /*contact*/
@@ -364,11 +370,28 @@ nav ul li:hover{
 
 
 
+.email p{
+  font-size: min(20px, 1.5vw);
+}
+
+
+
 
 
 
 /*res*/
 @media(max-width:750px){
+.home p, .homebutton, .about p, .project p, .contact p, .backList li, .backList p{
+  font-size: 16px;
+}
+.backList{
+  padding: 10px;
+  margin-top: -100px;
+}
+
+
+
+
   nav ul{
     display: none;
   }
@@ -380,18 +403,32 @@ nav ul li:hover{
     z-index: 3;
     position: fixed;
     display: flex;
-    right: -100px;
+    right: -100vw;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
     flex-direction: column;
-    background-color: white;
+    align-items: end;
+    color: white;
     padding: 15px;
     border-radius: 5px;
-    height: 150px ;
+    /*height: 150px ;*/
     justify-content: space-between;
+    background-color: black;
   
   }
 
+
+  .mobilemenu ul{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+  }
+
   .mobilemenu li{
-    color: black;
+    color: white;
     list-style: none;
   }
 /*home*/

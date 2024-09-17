@@ -1,8 +1,10 @@
 import React from 'react'
 import { BsArrowReturnRight } from "react-icons/bs";
+import { motion } from 'framer-motion';
 function Background({closeMenu}) {
   return <>
-    <div className="background" onClick={closeMenu}>
+    <div
+    className="background" onClick={closeMenu}>
         <h1>My Background</h1>
         <div className="backList">
             <div className="education">
