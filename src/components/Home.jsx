@@ -12,7 +12,7 @@ function Home({closeMenu}) {
           left:"0"
       }}
       transition={{
-          duration:0.5,
+          duration:0.3,
           ease:"backInOut"
       }}
         className="homefirst">
@@ -29,7 +29,7 @@ function Home({closeMenu}) {
             right:"0"
           }}
           transition={{
-            duration:0.5,
+            duration:0.3,
             ease:"backInOut"
           }}
         className="homesecond">
