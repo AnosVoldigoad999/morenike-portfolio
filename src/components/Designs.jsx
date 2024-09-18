@@ -36,7 +36,23 @@ function Designs({closeMenu}) {
 
   return <>
     <div className="designs" id='designs' onClick={closeMenu}>
-        <h1>My Designs</h1>
+        <motion.h1
+         initial={{
+          x:-100,
+          opacity:0
+      }}
+      whileInView={{
+          x:0,
+          opacity:1
+      }}
+      transition={{
+          duration:1,
+          ease:"easeInOut"
+      }}
+      viewport={{
+        once:true
+      }}
+        >My Designs</motion.h1>
         <Carousel className="projects" responsive={responsive}   showDots={true} customDot={<CustomDots />} removeArrowOnDeviceType={["tablet", "mobile"]}>
           {PROJECTS.map(project=>{
             return <a href={project.link} target='_blank'>

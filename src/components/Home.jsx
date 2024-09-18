@@ -6,14 +6,16 @@ function Home({closeMenu}) {
     <div className="home" id='home' onClick={closeMenu}>
         <motion.div
          initial={{
-          left:"-100vw"
+          x:-100,
+          opacity:0
       }}
       animate={{
-          left:"0"
+          x:0,
+          opacity:1
       }}
       transition={{
-          duration:0.6,
-          ease:"backInOut"
+          duration:1,
+          ease:"easeInOut"
       }}
         className="homefirst">
         <h1>WELCOME TO MY DESIGN PORTFOLIO</h1>
@@ -32,14 +34,16 @@ function Home({closeMenu}) {
         </motion.div>
         <motion.div
           initial={{
-            right:"-100vw"
+            x:100,
+            opacity:0
           }}
           animate={{
-            right:"0"
+            x:0,
+            opacity:1
           }}
           transition={{
-            duration:0.6,
-            ease:"backInOut"
+            duration:1,
+            ease:"easeInOut"
           }}
         className="homesecond">
         <a href="#designs">

@@ -6,8 +6,39 @@ import { motion } from "framer-motion";
 function Contact({closeMenu}){
     return<>
     <div className="contact" id="contact" onClick={closeMenu}>
-        <h1>Reach Out To Me</h1>
-        <div className="des">
+        <motion.h1
+         initial={{
+          x:-100,
+          opacity:0
+      }}
+      whileInView={{
+          x:0,
+          opacity:1
+      }}
+      transition={{
+          duration:1,
+          ease:"easeInOut"
+      }}
+      viewport={{
+        once:true
+      }}>Reach Out To Me</motion.h1>
+        <motion.div 
+         initial={{
+          x:100,
+          opacity:0
+      }}
+      whileInView={{
+          x:0,
+          opacity:1
+      }}
+      transition={{
+          duration:1,
+          ease:"easeInOut"
+      }}
+      viewport={{
+        once:true
+      }}
+        className="des">
        <a href="https://www.bing.com/maps?q=Lagos+Nigeria+on+the+map&FORM=HDRSC6&cp=6.543461%7E3.373177&lvl=11.0" target="_blank">
        <motion.div 
        whileHover={{
@@ -53,7 +84,7 @@ function Contact({closeMenu}){
             <p style={{color:"grey"}}>+2348145391738</p>
         </motion.div>
         </a>
-        </div>
+        </motion.div>
     </div>
     </>
 }

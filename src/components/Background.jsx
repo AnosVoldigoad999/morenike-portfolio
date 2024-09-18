@@ -5,8 +5,37 @@ function Background({closeMenu}) {
   return <>
     <div
     className="background" onClick={closeMenu}>
-        <h1>My Background</h1>
-        <div className="backList">
+        <motion.h1
+        initial={{
+            x:-100,
+            opacity:0
+        }}
+        whileInView={{
+            x:0,
+            opacity:1
+        }}
+        transition={{
+            duration:1,
+            ease:"easeInOut"
+        }}
+        >My Background</motion.h1>
+        <motion.div
+         initial={{
+            x:100,
+            opacity:0
+        }}
+        whileInView={{
+            x:0,
+            opacity:1
+        }}
+        transition={{
+            duration:1,
+            ease:"easeInOut"
+        }}
+        viewport={{
+            once:true
+        }}
+        className="backList">
             <div className="education">
             <p><BsArrowReturnRight className='arrow' /> Education</p>
                 <ul>
@@ -28,7 +57,7 @@ function Background({closeMenu}) {
                     <li>Junior Creative at IOE Analytics,2022. </li>
                 </ul>
             </div>
-        </div>
+        </motion.div>
     </div>
   </>
 }

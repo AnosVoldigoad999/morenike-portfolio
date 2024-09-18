@@ -185,7 +185,8 @@ nav ul li{
 /*About*/
 .about{
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  justify-content: center;
   align-items: center;
   padding: 20px 3vw;
   height: 100vh;
@@ -194,14 +195,18 @@ nav ul li{
 }
 
 .about a{
-  width: 40%;
+  width: 37%;
   position: relative;
+  /*border: 1px solid red;*/
+  display: flex;
 }
 
 .about img{
   cursor: pointer;
   /*border: 1px solid red;*/
   width: 100%;
+  max-width: 475px;
+  max-height: 475px;
 }
 
 /*.about img:hover{
