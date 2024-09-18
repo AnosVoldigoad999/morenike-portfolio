@@ -18,6 +18,9 @@ function Background({closeMenu}) {
             duration:1,
             ease:"easeInOut"
         }}
+        viewport={{
+            once:true
+        }}
         >My Background</motion.h1>
         <motion.div
          initial={{
