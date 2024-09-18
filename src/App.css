@@ -305,6 +305,7 @@ nav ul li{
 .project img{
   height: 50%;
   object-fit: contain;
+  display: block;
   background-color: white;
 }
 
