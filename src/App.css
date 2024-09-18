@@ -26,6 +26,7 @@ h1{
 body{
   background-color: black;
   color: white;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar{
@@ -61,6 +62,9 @@ body::-webkit-scrollbar-thumb{
 
 main{
   width: 100vw;
+  position: absolute;
+  margin-top: 30px;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -195,10 +199,11 @@ nav ul li{
 }
 
 .about a{
-  width: 37%;
+  width: 30%;
   position: relative;
   /*border: 1px solid red;*/
   display: flex;
+  margin-left: 10%;
 }
 
 .about img{
@@ -439,7 +444,7 @@ nav ul li{
 .home{
   margin-top: min(15vh, 70px);
   /*border: 1px solid red;*/
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 
@@ -452,6 +457,11 @@ nav ul li{
   text-align: center;
   justify-content: center;
   height: 50%;
+
+}
+
+.homesecond p{
+  display: none;
 }
 
 .home h1{
@@ -468,16 +478,16 @@ nav ul li{
 /*About*/
 .about{
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   /*border: 1px solid red;*/
   margin-top: min(30vh, 150px);
 }
 
 .about a{
-  width: 80%;
+  width: 100%;
   /*border: 1px solid red;*/
-  height: 50%;
+  height: fit-content;
 }
 
 
@@ -495,6 +505,21 @@ nav ul li{
   height: 50%;
   line-height: 30px;
   /*border: 1px solid green;*/
+}
+
+.about a{
+  width: 100%;
+  justify-content: center;
+  /*border: 1px solid red;*/
+  margin: 0 auto;
+}
+
+.about img{
+  width: 50%;
+  height: 50%;
+  height: fit-content;
+ /*border: 1px solid red; */
+ display: block;
 }
 
 .aboutfirst h1{

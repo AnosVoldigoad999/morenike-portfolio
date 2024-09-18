@@ -1,0 +1,74 @@
+.about{
+    display: flex;
+    /*justify-content: space-between;*/
+    justify-content: center;
+    align-items: center;
+    padding: 20px 3vw;
+    height: 100vh;
+    min-height: 620px;
+    /*border: 1px solid red;*/
+  }
+  
+  .about a{
+    width: 30%;
+    position: relative;
+    /*border: 1px solid red;*/
+    display: flex;
+    margin-left: 10%;
+  }
+  
+  .about img{
+    cursor: pointer;
+    /*border: 1px solid red;*/
+    width: 100%;
+    max-width: 475px;
+    max-height: 475px;
+  }
+  
+  /*.about img:hover{
+    scale: 1.05;
+  
+  }*/
+  
+  /*.about h1{
+    font-size: min(100px, 7vw);
+  }*/
+  
+  .aboutfirst{
+    width: 50%;
+    position: relative;
+    /*border: 1px solid green;*/
+  }
+  
+  .aboutfirst p{
+    font-size: min(2.3vw, 30px);
+    max-width: 480px;
+  }
+  
+  .aboutfirst hr{
+    width: 50%;
+  }
+  
+
+  <motion.a
+  initial={{
+    x:100,
+    opacity:0
+  }}
+  whileInView={{
+    x:0,
+    opacity:1
+  }}
+  whileHover={{
+    scale:1.05
+  }}
+  transition={{
+    duration:0.1,
+    x:{duration:1},
+    opacity:{duration:1},
+    ease:"easeInOut"
+  }}
+viewport={{
+once:true
+}}
+  href="#designs"><img src="/images/prof2.png" alt="who is morenike" /></motion.a>
