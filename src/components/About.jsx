@@ -47,7 +47,7 @@ function About({closeMenu}) {
 viewport={{
   once:true
 }}
-      href="#designs"><img src="/images/wetalk-mockup.png" alt="who is morenike" /></motion.a>
+      href="#designs"><img src="/images/prof2.png" alt="who is morenike" /></motion.a>
     </div>
   </>
 }

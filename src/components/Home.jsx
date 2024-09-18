@@ -55,7 +55,7 @@ function Home({closeMenu}) {
           duration:0.1,
           ease:"easeInOut"
         }}
-        src='/images/newprof.png' />
+        src='/images/prof2.png' />
         </a>
        <motion.a 
        whileHover={{
